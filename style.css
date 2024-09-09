@@ -1,0 +1,135 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card, .surprise-card {
+    background: linear-gradient(145deg, #212121, #0f0f0f);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8), inset 0px 10px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #333;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Card Text Styling */
+.card h1, .surprise-card h1 {
+    font-size: 2.5em;
+    background: linear-gradient(145deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+.card p, .surprise-card p {
+    font-size: 1.2em;
+    color: #ccc;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+.surprise-btn {
+    background: linear-gradient(145deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    box-shadow: 0px 5px 15px rgba(255, 75, 43, 0.5), 0px 8px 30px rgba(0, 0, 0, 0.8);
+}
+
+.surprise-btn:hover {
+    background: linear-gradient(145deg, #ff4b2b, #ff416c);
+    box-shadow: 0px 8px 20px rgba(255, 75, 43, 0.7), 0px 10px 30px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px);
+}
+
+/* Mobile-Responsive Styling */
+@media (max-width: 768px) {
+    .card, .surprise-card {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .card h1, .surprise-card h1 {
+        font-size: 2em;
+    }
+
+    .card p, .surprise-card p {
+        font-size: 1em;
+    }
+}
+
+/* Animation for Card */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Surprise Page Specific */
+.surprise-card h1 {
+    color: #ff416c;
+    font-size: 2.8em;
+    text-shadow: 0px 7px 15px rgba(255, 65, 108, 0.5);
+}
+
+.surprise-card p {
+    font-size: 1.3em;
+    color: #ddd;
+}
+
+.balloons {
+    width: 150px;
+    margin-top: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Balloons Float Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}

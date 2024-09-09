@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="surprise-card">
+            <h1>🎉 Surprise 🎉</h1>
+            <p>Happy Birthday, Khushboo! 🎉 Like the calm beauty of Himachal’s mountains, you bring a quiet grace that
+                brightens the lives of those around you. May this year bring you the same peace and happiness that the
+                hills offer—timeless, serene, and full of wonder.💖</p>
+            <img src="images/balloons.png" alt="Balloons" class="balloons">
+        </div>
+    </div>
+
+    <script>
+        confetti({
+            particleCount: 200,
+            spread: 100,
+            origin: { y: 0.6 }
+        });
+    </script>
+</body>
+
+</html>
